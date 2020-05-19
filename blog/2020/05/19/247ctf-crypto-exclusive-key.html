@@ -53,7 +53,7 @@
                         <tbody>
                             <tr style="padding:0px">
                                 <td style="padding:2.5%;width:63%;vertical-align:middle">
-                                    <h1>247/CTF - Crypto - An Exclusive Key</h2>
+                                    <h1>247/CTF - Crypto - An Exclusive Key</h1>
                                         <p>Hi all! This is my first blog post ever, I'll try to write every post
                                             self-explanatory and
                                             explain every detail involved. This time is about the third challenge of
@@ -69,8 +69,8 @@
                                         </cite>
                                         <p>At first sight, we can't see any repetition, so it seems there is no clue
                                             about what xor key was used for encryption:</p>
-                                        <pre><code class="lang-shell">$ md5 exclusive_key
-MD5 (exclusive_key) = e1078ca347364828a43a40bd55c937f2
+                                        <pre><code class="lang-shell">$ md5sum exclusive_key
+e1078ca347364828a43a40bd55c937f2  exclusive_key
 $ xxd exclusive_key | head
 00000000: 0e15 730c 1712 2233 2718 5a15 5f5d 5c68  ..s..."3'.Z._]\h
 00000010: 050b 405b 5914 065d 5846 400b 4100 090a  ..@[Y..]XF@.A...
@@ -86,12 +86,11 @@ $ xxd exclusive_key | head
                                         <p>If we Google a bit, we encounter an amazing tool to analyze multi-byte xor
                                             cipher called <a
                                                 href="https://github.com/hellman/xortool" target="_blank"><code>xortool</code></a> able
-                                            to:
+                                            to:</p>
                                         <ul>
                                             <li>guess the key length (based on count of equal chars)</li>
                                             <li> guess the key (base on knowledge of most frequent char)</li>
                                         </ul>
-                                        </p>
                                         <p>If we run the tool with default settings, it outputs the following results:
                                         </p>
                                         <pre><code class="lang-shell">$ xortool exclusive_key
@@ -131,7 +130,7 @@ Key-length can be 4*n
 Found 0 plaintexts with 95%+ valid characters
 See files filename-key.csv, filename-char_used-perc_valid.csv</code></pre>
                                         <p>The tool will create the folder <code>xortool_out</code> with three files in
-                                            this case:
+                                            this case:</p>
                                         <ul>
                                             <li><strong><code>0.out</code></strong>: decrypted file with guessed xor
                                                 key.</li>
@@ -141,7 +140,6 @@ See files filename-key.csv, filename-char_used-perc_valid.csv</code></pre>
                                             <li><strong><code>filename-key.csv</code></strong>: list of key used for
                                                 every file.</li>
                                         </ul>
-                                        </p>
                                         <p>Unfortunately, the resulting file doesn't seem to have been decrypted right:
                                         </p>
                                         <pre><code class="lang-shell">$ xxd xortool_out/0.out | head
@@ -213,7 +211,7 @@ In [2]: with open('exclusive_key', 'rb') as f:
 ...:
 
 In [3]: ''.join([chr(p ^ c) for p, c in zip(plain[:40], cipher[:40])])
-Out[4]: '247CTF{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}'</code></pre>
+Out[3]: '247CTF{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}'</code></pre>
                                         <p>And the flag!</p>
                                 </td>
                             </tr>
@@ -224,7 +222,7 @@ Out[4]: '247CTF{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}'</code></pre>
                         <tbody>
                             <tr style="padding:0px">
                                 <td style="width:100%;vertical-align:middle">
-                                    <p align="right"><a href="#top" name="top">top</a>
+                                    <p align="right" style="margin-right: 14px;"><a href="#top" name="top">top</a>
                                     </p>
                                 </td>
                             </tr>
