@@ -99,6 +99,18 @@ strong {
     font-weight: 600
 }
 
+cite {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-style: italic;
+    color: #515C6B;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+code {
+    font-style: monospace;
+}
+
 alert {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 14px;
