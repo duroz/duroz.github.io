@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta charset=utf-8>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+</head>
+
+<body>
+    <a name="top"></a>
+    <table
+        style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr style="padding:0px">
+                <td style="padding:0px">
+                    <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="width:100%;vertical-align:middle">
+                                    <p><a href="/">home</a> &nbsp/&nbsp <a href="/blog/">blog</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h1>Test entry</h1>
+                    <img style="width:60%;max-width:60%;margin-bottom:20px;" alt="profile photo"
+                        src="https://davesamaniego2016.files.wordpress.com/2016/10/cat-catstruction-play-on-words-construction-cats-favim-com-4174852.jpeg"
+                        class="hoverZoomLink">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet scelerisque
+                        libero, vel eleifend ipsum elementum eu. Quisque egestas purus eu dolor aliquam finibus. Ut
+                        vitae metus sed dolor consectetur egestas. Sed eu ante a nibh viverra congue vitae a eros. Sed
+                        nec diam consectetur, condimentum dolor a, consectetur nisi. Proin posuere, dui eu fermentum
+                        dapibus, sem libero faucibus sapien, eget aliquet nibh ligula a est. Nam massa massa, accumsan
+                        eu mattis ac, gravida molestie velit. Sed faucibus purus in est bibendum auctor. Mauris
+                        facilisis dapibus commodo. Fusce eget mollis elit. Morbi molestie rutrum odio quis iaculis.
+                    </p>
+                    <pre><code>
+[0x0804a014]> s reloc.puts 
+[0x0804a014]> pd 1
+            ; DATA XREF from sym.imp.puts @ 0x8048360
+            ;-- reloc.puts:
+            0x0804a014      .dword 0xf7de9560                          ; RELOC 32 puts
+                    </code></pre>
+
+                    <h2>Crypto</h2>
+                    <pre><code>
+$ readelf -s /usr/lib32/libc-2.30.so | grep -w putsà
+460: 0006f560 527 FUNC WEAK DEFAULT 14 puts@@GLIBC_2.0
+                    </code></pre>
+                    <p>Suspendisse sodales eros vel felis pretium, eget posuere nisi elementum. Nunc suscipit placerat
+                        diam quis viverra. Morbi eu viverra libero. Suspendisse euismod, nibh nec dignissim gravida,
+                        augue diam finibus enim, id maximus elit sapien quis enim. Nam posuere faucibus consectetur.
+                        Duis semper tellus sit amet nibh lacinia, vel consequat nunc posuere. Etiam id odio at lacus
+                        euismod sollicitudin. </p>
+                    <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:100%;vertical-align:middle">
+                                    <p align="right"><a href="#top">top</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
