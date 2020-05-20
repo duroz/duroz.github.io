@@ -199,8 +199,8 @@ See files filename-key.csv, filename-char_used-perc_valid.csv</code></pre>
 00000090: 2e64 2a63 756d 656e 7400 6c65 6d65 6e74  .d*cument.lement</code></pre>
                                         <p>And if we examine the key used for that file, we can see that it follows the
                                             <strong>flag structure <code>247CTF{XXX}</code></strong>, but it
-                                            contains some bytes out of the md5 hex string hash range
-                                            (<code>[a-z09]</code>). As we already know both the cipher and plain text,
+                                            contains some bytes out of the md5 hexstring hash range
+                                            (<code>[a-f09]</code>). As we already know both the cipher and plain text,
                                             we can xor them to obtain the right key:</p>
                                         <pre><code class="lang-python">In [1]: with open('Hacker - Wikipedia.html', 'rb') as f:
 ...:     plain = f.read()
