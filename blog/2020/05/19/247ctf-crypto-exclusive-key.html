@@ -24,6 +24,9 @@
     <link rel="icon" type="image/png" href="/images/icon.png">
     <link rel="shortcut icon" href="/images/icon.png">
 
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/atom-one-dark.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
@@ -201,7 +204,7 @@ See files filename-key.csv, filename-char_used-perc_valid.csv</code></pre>
                                         <p>And if we examine the key used for that file, we can see that it follows the
                                             <strong>flag structure <code>247CTF{XXX}</code></strong>, but it
                                             contains some bytes out of the md5 hexstring hash range
-                                            (<code>[a-f09]</code>). As we already know both the cipher and plain text,
+                                            (<code>[a-f0-9]</code>). As we already know both the cipher and plain text,
                                             we can xor them to obtain the right key:</p>
                                         <pre><code class="lang-python">In [1]: with open('Hacker - Wikipedia.html', 'rb') as f:
 ...:     plain = f.read()
