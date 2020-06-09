@@ -13,6 +13,20 @@ body, td, th, tr, p, a {
     font-size: 14px
 }
 
+pre {
+    white-space: pre-wrap;
+}
+
+figcaption {
+    margin: 10px 0 0 0;
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    text-align: center;
+}
+
+figure {
+    padding: 5px;
+}
+
 strong {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 14px;
@@ -30,6 +44,7 @@ cite {
 code {
     font-family: 'Inconsolata', Consolas, Monaco, monospace;
     font-size: 15px;
+    background: #EEE;
 }
 
 alert {
