@@ -1,3 +1,3 @@
 User-agent: *
 Disallow: 
-Sitemap: https://duroz.github.io/data/sitemap.xml
+Sitemap: https://duroz.github.io/sitemap.xml
