@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows Registry | Daniel Uroz</title>
+    <link>https://duroz.github.io/tag/windows-registry/</link>
+      <atom:link href="https://duroz.github.io/tag/windows-registry/index.xml" rel="self" type="application/rss+xml" />
+    <description>Windows Registry</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://duroz.github.io/media/icon_hu235ca53f37dee462d16f210e413d062e_29183_512x512_fill_lanczos_center_3.png</url>
+      <title>Windows Registry</title>
+      <link>https://duroz.github.io/tag/windows-registry/</link>
+    </image>
+    
+    <item>
+      <title>Characteristics and Detectability of Windows Auto-Start Extensibility Points in Memory Forensics</title>
+      <link>https://duroz.github.io/publication/2019-diin-uroz-r/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://duroz.github.io/publication/2019-diin-uroz-r/</guid>
+      <description>&lt;!---
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
