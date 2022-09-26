@@ -1,10 +1,12 @@
 @article{2022-JIOT-Uroz-R,
-    title = "Characterization and Evaluation of IoT Protocols for Data Exfiltration",
-    booktitle = "2022 IEEE Internet of Things Journal",
-    year = "2022",
-    doi = "https://doi.org/10.1109/JIOT.2022.3163469",
-    author = "Daniel Uroz and Ricardo J. Rodríguez",
-    note = "(Accepted for publication. To appear)",
-    keywords = "AMQP 1.0, CoAP 1.0, Data Exfiltration, IoT Protocols, MQTT 3.1.1, MQTT 5.0",
-    abstract = "Data exfiltration relies primarily on network protocols for unauthorized data transfers from information systems. In addition to well-established Internet protocols (such as DNS, ICMP, or NTP, among others), adversaries can use newer protocols such as Internet of Things (IoT) protocols to inadvertently exfiltrate data. These IoT protocols are specifically designed to meet the limitations of IoT devices and networks, where minimal bandwidth usage and low power consumption are desirable. In this paper, we review the suitability of IoT protocols for exfiltrating data. In particular, we focus on the Constrained Application Protocol (CoAP; version 1.0), the Message Queuing Telemetry Transport protocol (MQTT; in its versions 3.1.1 and 5.0), and Advanced Message Queuing Protocol (AMQP; version 1.0). For each protocol, we review its specification and calculate the overhead and available space to exfiltrate data in each protocol message. In addition, we empirically measure the elapsed time to exfiltrate different amounts of data. In this regard, we develop a software tool (dubbed CHITON) to encapsulate and exfiltrate data within the IoT protocol messages. Our results show that both MQTT and AMQP outperform CoAP. Additionally, MQTT and AMQP protocols are best suited for exfiltrating data, as both are commonly used to connect to IoT cloud providers through IoT gateways and are therefore more likely to be allowed in business networks. Finally, we also provide suggestions and recommendations to detect data exfiltration in IoT protocols."
+    author      = "Daniel Uroz and Ricardo J. Rodríguez",
+    journal     = "IEEE Internet of Things Journal", 
+    title       = "Characterization and Evaluation of IoT Protocols for Data Exfiltration", 
+    year        = "2022",
+    volume      = "9",
+    number      = "19",
+    pages       = "19062-19072",
+    doi         = "10.1109/JIOT.2022.3163469",
+    keywords    = "AMQP 1.0, CoAP 1.0, Data Exfiltration, IoT Protocols, MQTT 3.1.1, MQTT 5.0",
+    abstract    = "Data exfiltration relies primarily on network protocols for unauthorized data transfers from information systems. In addition to well-established Internet protocols (such as DNS, ICMP, or NTP, among others), adversaries can use newer protocols such as Internet of Things (IoT) protocols to inadvertently exfiltrate data. These IoT protocols are specifically designed to meet the limitations of IoT devices and networks, where minimal bandwidth usage and low power consumption are desirable. In this paper, we review the suitability of IoT protocols for exfiltrating data. In particular, we focus on the Constrained Application Protocol (CoAP; version 1.0), the Message Queuing Telemetry Transport protocol (MQTT; in its versions 3.1.1 and 5.0), and Advanced Message Queuing Protocol (AMQP; version 1.0). For each protocol, we review its specification and calculate the overhead and available space to exfiltrate data in each protocol message. In addition, we empirically measure the elapsed time to exfiltrate different amounts of data. In this regard, we develop a software tool (dubbed CHITON) to encapsulate and exfiltrate data within the IoT protocol messages. Our results show that both MQTT and AMQP outperform CoAP. Additionally, MQTT and AMQP protocols are best suited for exfiltrating data, as both are commonly used to connect to IoT cloud providers through IoT gateways and are therefore more likely to be allowed in business networks. Finally, we also provide suggestions and recommendations to detect data exfiltration in IoT protocols."
 }

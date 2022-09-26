@@ -1,12 +1,12 @@
 @inproceedings{2021-WOOT-Uroz-R,
-    title = "Evaluation of the Executional Power in Windows using Return Oriented Programming",
-    booktitle = "2021 IEEE Security and Privacy Workshops (SPW)",
-    pages = "361-372",
-    year = "2021",
-    month = "May",
-    doi = "https://doi.org/10.1109/SPW53761.2021.00056",
-    url = "https://ieeexplore.ieee.org/document/9474272",
-    author = "Daniel Uroz and Ricardo J. Rodríguez",
-    keywords = "ROP Chain, Evaluation, Turing-completeness, Windows, Automatic Exploit",
-    abstract = "Code-reuse techniques have emerged as a way to defeat the control-flow defenses that prevent the injection and execution of new code, as they allow an adversary to hijack the control flow of a victim program without injected code. A well-known code-reuse attack technique is Return-Oriented-Programming (ROP), which considers and links together (relatively short) code snippets, named ROP gadgets, already present in the victim's memory address space through a controlled use of the stack values of the victim program. Although ROP attacks are known to be Turing-complete, there are still open question such as the quantification of the executional power of an adversary, which is determined by whatever code exists in the memory of a victim program, and whether an adversary can build a ROP chain, made up of ROP gadgets, for any kind of algorithm. To fill these gaps, in this paper we first define a virtual language, dubbed ROPLANG, that defines a set of operations (specifically, arithmetic, assignment, dereference, logical, and branching operations) which are mapped to ROP gadgets. We then use it to evaluate the executional power of an adversary in Windows 7 and Windows 10, in both 32- and 64-bit versions. In addition, we have developed ROP3, a tool that accepts a set of program files and a ROP chain described with our language and returns the code snippets that make up the ROP chain. Our results show that there are enough ROP gadgets to simulate any virtual operation and that branching operations are the less frequent ones. As expected, our results also indicate that the larger a program file is, the more likely to find ROP gadgets within it for every virtual operation."
+    title       = "Evaluation of the Executional Power in Windows using Return Oriented Programming",
+    booktitle   = "2021 IEEE Security and Privacy Workshops (SPW)",
+    pages       = "361-372",
+    year        = "2021",
+    month       = "May",
+    doi         = "https://doi.org/10.1109/SPW53761.2021.00056",
+    url         = "https://ieeexplore.ieee.org/document/9474272",
+    author      = "Daniel Uroz and Ricardo J. Rodríguez",
+    keywords    = "ROP Chain, Evaluation, Turing-completeness, Windows, Automatic Exploit",
+    abstract    = "Code-reuse techniques have emerged as a way to defeat the control-flow defenses that prevent the injection and execution of new code, as they allow an adversary to hijack the control flow of a victim program without injected code. A well-known code-reuse attack technique is Return-Oriented-Programming (ROP), which considers and links together (relatively short) code snippets, named ROP gadgets, already present in the victim's memory address space through a controlled use of the stack values of the victim program. Although ROP attacks are known to be Turing-complete, there are still open question such as the quantification of the executional power of an adversary, which is determined by whatever code exists in the memory of a victim program, and whether an adversary can build a ROP chain, made up of ROP gadgets, for any kind of algorithm. To fill these gaps, in this paper we first define a virtual language, dubbed ROPLANG, that defines a set of operations (specifically, arithmetic, assignment, dereference, logical, and branching operations) which are mapped to ROP gadgets. We then use it to evaluate the executional power of an adversary in Windows 7 and Windows 10, in both 32- and 64-bit versions. In addition, we have developed ROP3, a tool that accepts a set of program files and a ROP chain described with our language and returns the code snippets that make up the ROP chain. Our results show that there are enough ROP gadgets to simulate any virtual operation and that branching operations are the less frequent ones. As expected, our results also indicate that the larger a program file is, the more likely to find ROP gadgets within it for every virtual operation."
 }
