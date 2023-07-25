@@ -957,7 +957,7 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span>
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">puts</span><span class="p">(</span><span class="s">&#34;Hello World!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">puts</span><span class="p">(</span><span class="s">&#34;Hello World!&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span> 
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>Okay, so if we analyze the compiled binary (<code>gcc -o test.out -m32 -no-pie test.c</code>) with radare2, well see that the parameter <code>&quot;Hello World!&quot;</code> is passed into the stack at line <code>0x08049184</code>:</p>
@@ -1451,7 +1451,7 @@ Incorrect secret password!
       
 
     
-    <script src="/js/vendor-bundle.min.32ee83730ed883becad04bc5170512cc.js"></script>
+    <script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
 
     
     
@@ -1546,7 +1546,7 @@ Incorrect secret password!
       
     
     
-    <script src="/en/js/wowchemy.min.d66c8b3b4ad0f66a62428f6bc7cf477d.js"></script>
+    <script src="/en/js/wowchemy.min.43c8f7a4851160885a7d8069dfa86538.js"></script>
 
     
     
