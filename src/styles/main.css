@@ -10,11 +10,6 @@
     text-align: center;
 }
 
-.section,
-.footer {
-    text-align: left;
-}
-
 .badge-danger {
     color: white;
     background-color: #dc3545;
@@ -31,7 +26,7 @@
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
 body {
@@ -101,6 +96,15 @@ a:active,
 a:visited {
     color: #0f62fe;
     text-decoration: none;
+}
+
+header {
+    text-align: center;
+}
+
+section,
+footer {
+    text-align: left;
 }
 
 footer {
