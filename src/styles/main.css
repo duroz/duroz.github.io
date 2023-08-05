@@ -29,15 +29,47 @@
     word-break: break-word;
 }
 
+.description,
+.entry {
+    margin: 0 0 1em 0;
+}
+
+.description:after,
+.entry:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+}
+
+.left {
+    width: 15%;
+    font-weight: bold;
+}
+
+.right {
+    width: 85%;
+}
+
+.entry-left {
+    width: 70%;
+}
+
+.entry-right {
+    text-align: right;
+    width: 30%;
+}
+
 body {
     color: black;
     background-color: white;
     font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
-p,
-ul,
-dl {
+p {
     display: block;
     margin: 0 0 1em 0;
     line-height: 1.4;
@@ -71,26 +103,6 @@ h4 {
     font-weight: 300;
 }
 
-dl {
-    display: grid;
-    grid-template-columns: max-content auto;
-}
-
-dt {
-    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: bold;
-    grid-column-start: 1;
-}
-
-dd {
-    grid-column-start: 2;
-    margin-bottom: 0.75em;
-}
-
-li {
-    margin-bottom: 0.75em;
-}
-
 a,
 a:visited {
     color: #0f62fe;
@@ -114,4 +126,14 @@ footer {
 footer {
     font-size: small;
     font-style: italic;
+}
+
+@media screen and (max-width: 720px) {
+    .left {
+        width: 25%;
+    }
+    
+    .right {
+        width: 75%;
+    }
 }
