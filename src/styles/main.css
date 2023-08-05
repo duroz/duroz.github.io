@@ -6,21 +6,17 @@
     max-width: 700px;
 }
 
-.header {
-    text-align: center;
-}
-
-.badge-danger {
+.badge-alert {
     color: white;
-    background-color: #dc3545;
+    background-color: #0062ff;
 }
 
 .badge {
     font-family: 'IBM Plex Sans', sans-serif;
     display: inline-block;
     padding: .25em .4em;
-    font-size: 80%;
-    font-weight: bold;
+    font-size: 90%;
+    font-weight: 400;
     line-height: 1;
     text-align: center;
     white-space: nowrap;
