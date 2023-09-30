@@ -105,13 +105,12 @@ h4 {
 
 a,
 a:visited {
-    color: #0f62fe;
+    color: #007d79;
     text-decoration: none;
 }
 
 a:hover {
-    color: #0043ce;
-    text-decoration: underline;
+    opacity: 0.5;
 }
 
 header {
