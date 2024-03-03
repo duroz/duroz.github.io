@@ -127,6 +127,10 @@ footer {
     font-style: italic;
 }
 
+figure {
+    display: inline-block;
+}
+
 @media screen and (max-width: 720px) {
     .left {
         width: 25%;
