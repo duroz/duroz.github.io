@@ -63,6 +63,10 @@
     width: 30%;
 }
 
+.gallery {
+    border-radius: 10%;
+}
+
 body {
     color: black;
     background-color: white;
