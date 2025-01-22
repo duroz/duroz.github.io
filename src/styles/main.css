@@ -135,6 +135,14 @@ figure {
     display: inline-block;
 }
 
+li {
+    margin-bottom: 5px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
 @media screen and (max-width: 720px) {
     .left {
         width: 25%;
