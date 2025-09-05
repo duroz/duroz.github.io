@@ -11,6 +11,10 @@
     background-color: #da1e28;
 }
 
+alert{
+    color: #da1e28;
+}
+
 .badge {
     font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
     display: inline-block;
