@@ -1,6 +1,5 @@
 User-agent: *
 
-Disallow: /pgp/
 Disallow: /flavors/
 
 Sitemap: https://duroz.github.io/sitemap.xml
